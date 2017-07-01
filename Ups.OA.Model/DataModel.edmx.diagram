@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="17b8b93ada5f4ad7929408293de19a13" Name="Diagram1">
+        <EntityTypeShape EntityType="ModelFirstDBModel.Customer" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelFirstDBModel.OrderInfo" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelFirstDBModel.Product" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelFirstDBModel.R_Customer_RoleInfo" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelFirstDBModel.RoleInfo" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="ModelFirstDBModel.FK_CustomerOrderInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="ModelFirstDBModel.FK_CustomerR_Customer_RoleInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="ModelFirstDBModel.FK_R_Customer_RoleInfoRoleInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="ModelFirstDBModel.CustomerProduct" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

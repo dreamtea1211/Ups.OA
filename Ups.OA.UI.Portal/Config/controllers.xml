@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" default-autowire="constructor">
+  <object type="Ups.OA.UI.Portal.Controllers.CustomerController, Ups.OA.UI.Portal" singleton="false" >
+    <property name="CustomerService" ref="CustomerService" />
+  </object>
+</objects>
+

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" default-autowire="constructor">
+  <!--spring.net通过工厂的实例方法来创建对象的配置Demo-->
+  <!--<object name="DbSessionFactory" type="Ups.OA.DALFactory.DbSessionFactory, Ups.OA.DALFactory" singleton="true"></object>-->
+  <!--<object name="DbSession" type="Ups.OA.DALFactory.DbSession, Ups.OA.DALFactory" singleton="false" factory-method="GetCurrentDbSession"
+      factory-object="DbSessionFactory"></object>-->
+
+  <!--spring.net通过工厂的一个静态方法来创建的配置Demo,type就直接配置到工厂类型就可以了-->
+  <object name="DbSession" type="Ups.OA.DALFactory.DbSessionFactory, Ups.OA.DALFactory" singleton="false" factory-method="GetCurrentDbSession"></object>
+  <object name="CustomerDal" type="Ups.OA.EFDAL.CustomerDal, Ups.OA.EFDAL" singleton="false"></object>
+  <object name="ProductDal" type="Ups.OA.EFDAL.ProductDal, Ups.OA.EFDAL" singleton="false"></object>
+</objects>
